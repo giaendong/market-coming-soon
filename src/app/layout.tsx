@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ManropeRegular } from '@/fonts/Fonts'
+import Providers from '@/utils/Providers'
 
 export const metadata: Metadata = {
   title: 'Nusa Market Coming Soon',
@@ -14,9 +13,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Providers>
+        <body className={ManropeRegular.className}>{children}</body>
+      </Providers>
     </html>
   )
 }
