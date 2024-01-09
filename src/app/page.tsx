@@ -108,7 +108,7 @@ export default function Home() {
                   onClick={submit}
                   disabled={isSubmitting || email === '' || !validateEmail(email) || isSuccess}
                 >
-                  {isSuccess ? 'Successfully Subscribed!' : 'SEND'}
+                  {isSuccess ? 'Successfully Subscribed!' : isSubmitting ? 'Sending...' : 'SEND'}
                 </button>
               </div>
             </div>
