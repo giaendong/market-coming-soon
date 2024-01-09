@@ -34,6 +34,7 @@ export default function Home() {
   })
 
   const submit = useCallback(() => {
+    setIsSubmitting(true)
     sendMail.mutate({email})
   },[email, sendMail])
 
