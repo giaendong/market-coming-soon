@@ -17,6 +17,78 @@
 } */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(255, 255, 255);
   background: black;
+}
+
+.circular {
+  width: 200px; /* Set width and height */
+  height: 200px;
+  background-color: teal; /* Set background color */
+  border-radius: 50%; /* Make it round */
+  text-align: center; /* Center text */
+  line-height: 200px; /* Center text vertically */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Font */
+  font-size: 24px; /* Font size */
+}
+
+p#text {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  animation: effect 8s linear infinite;
+}
+
+p#text > span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0px 150px;
+  transform-style: flat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.css-selector {
+  background: linear-gradient(180deg, rgba(63, 105, 255, 0.5), rgba(0, 27, 123, 0.5), rgba(143, 43, 43, 0));
+  width: 100vw;
+  height: 100vh;
+
+
+  -webkit-animation: CreatorConnect 10s linear forwards;
+  -moz-animation: CreatorConnect 10s linear forwards;
+  -o-animation: CreatorConnect 10s linear forwards;
+  animation: CreatorConnect 10s linear forwards;
+}
+
+@-webkit-keyframes CreatorConnect {
+  100%{background-position:50% 0%; opacity: 0}
+  50%{background-position:51% 100%; opacity: 1}
+  0%{background-position:50% 0%; opacity: 0}
+}
+@-moz-keyframes CreatorConnect {
+  100%{background-position:50% 0%; opacity: 0}
+  50%{background-position:51% 100%; opacity: 1}
+  0%{background-position:50% 0%; opacity: 0}
+}
+@-o-keyframes CreatorConnect {
+  100%{background-position:50% 0%; opacity: 0}
+  50%{background-position:51% 100%; opacity: 1}
+  0%{background-position:50% 0%; opacity: 0}
+}
+@keyframes CreatorConnect {
+  100%{background-position:50% 0%; opacity: 0}
+  50%{background-position:51% 100%; opacity: 1}
+  0%{background-position:50% 0%; opacity: 0}
 }

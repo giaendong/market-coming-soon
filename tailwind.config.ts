@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-connect': 'background: radial-gradient(50% 50% at 50% 50%, rgba(0, 4, 18, 0.24) 0%, rgba(0, 4, 18, 0.8) 100%)'
       },
       keyframes: {
         typing: {
@@ -21,7 +21,7 @@ const config: Config = {
           },
           "100%": {
             width: "100%"
-          }  
+          }
         },
         blink: {
           "50%": {
@@ -29,7 +29,7 @@ const config: Config = {
           },
           "100%": {
             borderColor: "white"
-          }  
+          }
         }
       },
       animation: {
