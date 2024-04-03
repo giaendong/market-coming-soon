@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.17.9",
+    "@types/react-curved-text": "^2.0.3",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "svg-path-commander": "1.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
