@@ -27,7 +27,7 @@ export default function Connect(): JSX.Element {
                     <h1 className='lg:text-[60px] text-[2.5rem] font-bold tracking-widest z-10'>
                         CREATOR CONN3CT
                     </h1>
-                    <CircularBttn />
+                    <CircularBttn outterClass={"mt-5 md:mt-10 lg:mt-24"} />
 
                     <div className="w-full h-full">
                         <img src={'/Rectangle.svg'} alt={'Rectangle Connect'}
@@ -36,7 +36,7 @@ export default function Connect(): JSX.Element {
                 </div>
             </section>
             <section className="w-screen h-screen relative bg-[#000F22]">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <div className="flex flex-row lg:pt-10">
                         <p className="leading-[24px] text-[14px] font-normal text-white mr-3">
                             <small>
@@ -47,10 +47,12 @@ export default function Connect(): JSX.Element {
                             &nbsp;About Program
                         </p>
                     </div>
-                    <div className="flex flex-col lg:flex-row">
-                        <Image className="mt-12" src={"/images/Section-1.png"} alt={'Welcome Creators'} width={500}
-                               height={500}/>
-                        <div>
+                    <div className="flex-col lg:flex-row grid lg:grid-cols-2 lg:gap-5">
+                         <div>
+                             <Image className="mt-12 w-full h-auto" src={"/images/Section-1.png"} alt={'Welcome Creators'} width={500}
+                                    height={500}/>
+                         </div>
+                        <div className="content-center">
                             <h2 className='lg:text-[50px] text-[2rem] font-bold tracking-widest mt-5'>
                                 Welcome Creators
                             </h2>
@@ -68,7 +70,7 @@ export default function Connect(): JSX.Element {
                 <div className="border-solid border-[1px] w-full border-[#13315c] absolute bottom-0"></div>
             </section>
             <section className="w-screen h-screen relative bg-[#000F22]">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <div className="flex flex-row">
                         <p className="leading-[24px] text-[14px] font-normal text-white mr-3">
                             <small>
@@ -79,47 +81,53 @@ export default function Connect(): JSX.Element {
                             &nbsp;Benefits
                         </p>
                     </div>
-                    <Image className="mt-12" src={"/images/Section-2.png"} alt={'Benefits'} width={500}
-                           height={500}/>
-                    <p className='not-italic font-semibold lg:text-[24px] md:text-[20px] text-[1rem] leading-8 flex items-center text-white
-                    flex-none order-none self-stretch grow-0'>
-                        Whether you&apos;re an artist or
-                        a brand, CREATOR CONN3CT offers benefits and opportunities for your next project, from
-                        monetization and exposure.
-                    </p>
+                    <div className="flex-col lg:flex-row grid lg:grid-cols-2 lg:gap-5">
+                        <div>
+                            <Image className="mt-12 w-full h-auto" src={"/images/Section-2.png"} alt={'Benefits'} width={500}
+                                   height={500}/>
+                        </div>
+                        <div className="content-center">
+                            <p className='not-italic font-semibold lg:text-[24px] md:text-[20px] text-[1rem] leading-8
+                            flex items-center text-white flex-none order-none self-stretch grow-0'>
+                                Whether you&apos;re an artist or
+                                a brand, CREATOR CONN3CT offers benefits and opportunities for your next project, from
+                                monetization and exposure.
+                            </p>
 
 
-                    <div className="grid grid-cols-2 grid-rows-2 gap-3">
-                        <div className="not-italic font-semibold text-lg leading-7 flex items-center text-[#D0D0D0]
+                            <div className="grid grid-cols-2 grid-rows-2 gap-3">
+                                <div className="not-italic font-semibold text-lg leading-7 flex items-center text-[#D0D0D0]
                         flex-none order-none grow-0">
-                            For Creator
-                        </div>
-                        <div>
-                            <ul className="list-disc not-italic font-normal text-xs leading-4 items-center text-[#D0D0D0]
+                                    For Creator
+                                </div>
+                                <div>
+                                    <ul className="list-disc not-italic font-normal text-xs leading-4 items-center text-[#D0D0D0]
                             order-1 grows">
-                                <li>Monetization Opportunities</li>
-                                <li>Exposure and Visibility</li>
-                                <li>Networking and Industry Connections</li>
-                            </ul>
-                        </div>
-                        <div className="not-italic font-semibold text-lg leading-7 flex items-center text-[#D0D0D0]
-                        flex-none order-none grow-0">
-                            For Brand
-                        </div>
-                        <div>
-                            <ul className="list-disc not-italic font-normal text-xs leading-4 items-center text-[#D0D0D0]
-                            order-1 grows">
-                                <li>Access to Unique Artistic Talent</li>
-                                <li>Authenticity and Originality</li>
-                                <li>Enhanced Brand Image</li>
-                            </ul>
+                                        <li>Monetization Opportunities</li>
+                                        <li>Exposure and Visibility</li>
+                                        <li>Networking and Industry Connections</li>
+                                    </ul>
+                                </div>
+                                <div className="not-italic font-semibold text-lg leading-7 flex items-center text-[#D0D0D0]
+                                flex-none order-none grow-0">
+                                    For Brand
+                                </div>
+                                <div>
+                                    <ul className="list-disc not-italic font-normal text-xs leading-4 items-center text-[#D0D0D0]
+                                    order-1 grows">
+                                        <li>Access to Unique Artistic Talent</li>
+                                        <li>Authenticity and Originality</li>
+                                        <li>Enhanced Brand Image</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="border-solid border-[1px] w-full border-[#13315c] absolute bottom-0"></div>
             </section>
             <section className="w-screen h-screen relative bg-[#000F22]">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <div className="flex flex-row">
                         <p className="leading-[24px] text-[14px] font-normal text-white mr-3">
                             <small>
@@ -130,19 +138,21 @@ export default function Connect(): JSX.Element {
                             &nbsp;Join the Program
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-3">
+                    <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-3 lg:gap-5 lg:mt-12">
                         {
                             joinTheProgram.map((text: string, index: number) => {
                                 return (
-                                    <div key={index} className="flex flex-col rounded-[24px] w-full [bg-[#000f22]
-                                shadow-[16px_8px_36px_#000000,-6px_-7px_32px_rgba(49,101,247,0.16)] p-[1.7rem] flex-wrap">
+                                    <div key={index} className="flex flex-col rounded-[24px] md:min-h-[220px] h-auto
+                                    w-full [bg-[#000f22] shadow-[16px_8px_36px_#000000,-6px_-7px_32px_rgba(49,101,247,0.16)]
+                                    p-[1.7rem] flex-wrap">
                                         <div className="not-italic font-medium text-2xl leading-8 text-[#2361FE]
-                                    order-none grow-0 hover:blur-sm hover:brightness-50 hover:sepia hover:contrast-100
-                                    hover:hue-rotate-30 hover:invert-0 hover:opacity-5 hover:saturate-150 hover:text-orange-400
-                                    hover:text-xl md:inset-x-1/4 md:inset-y-auto">{index + 1}.
+                                        order-none grow-0 md:inset-x-1/4 md:inset-y-auto">
+                                            {index + 1}.
                                         </div>
                                         <div className="not-italic font-semibold text-base leading-6 flex items-center
-                                    text-white flex-none order-1 self-stretch grow-0">{text}</div>
+                                    text-white flex-none order-1 self-stretch grow-0">
+                                            {text}
+                                        </div>
                                     </div>
                                 )
                             })
@@ -151,7 +161,7 @@ export default function Connect(): JSX.Element {
                 </div>
             </section>
             <section className="w-screen h-full relative bg-[#000F22] pb-64">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <h2 className='lg:text-[50px] text-[2rem] font-bold tracking-widest text-center'>
                         Watch
                     </h2>
@@ -159,7 +169,7 @@ export default function Connect(): JSX.Element {
                         Our latest post
                     </p>
                     <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-3">
-                        <div>
+                        <div className={"mt-24 md:mt-0"}>
                             <iframe
                                 src="https://www.youtube.com/embed/fE2EpZezsQs?si=oCH4HM3VO2vk79rH"
                                 title="YouTube video player" frameBorder="0"
@@ -183,7 +193,7 @@ export default function Connect(): JSX.Element {
                                 into the Metaverse
                             </p>
                         </div>
-                        <div className={"mt-24"}>
+                        <div className={"mt-24 md:mt-0"}>
                             <iframe
                                 src="https://www.youtube.com/embed/LCKHLlBBS8w?si=GckXsnCNHtj6IgO5"
                                 title="YouTube video player" frameBorder="0"
@@ -204,7 +214,7 @@ export default function Connect(): JSX.Element {
                                 Virtual Economic in Nusamarket: Revealing the Future
                             </p>
                         </div>
-                        <div className={"mt-24"}>
+                        <div className={"mt-24 md:mt-0"}>
                             <iframe
                                 src="https://www.youtube.com/embed/32tZK-tmmUc?si=yd9-ej8JqMhEj8z8"
                                 title="YouTube video player" frameBorder="0"
@@ -231,7 +241,7 @@ export default function Connect(): JSX.Element {
                 </div>
             </section>
             <section className="w-screen h-screen relative bg-[url('/images/bgCconnect.png')]">
-                <div className="container mx-auto">
+                <div className="container mx-auto px-4 md:px-0">
                     <h1 className='lg:text-[60px] text-[2.5rem] font-bold tracking-widest z-10 text-center'>
                         Ready to Join Us?
                     </h1>
@@ -246,7 +256,7 @@ export default function Connect(): JSX.Element {
                 <div
                     className={"w-[calc(100vw)] h-[calc(50vh-120px)] bg-[#000000] rounded-[50%_50%_0_0]" +
                         " drop-shadow-[-6px_-84px_32px_rgba(1,120,255,0.5)] relative"}>
-                    <CircularBttn />
+                    <CircularBttn outterClass={"mt-5 md:mt-10 lg:mt-24"} />
 
                 </div>
                 <div className="z-50 bg-black pb-10 lg:pb-20">

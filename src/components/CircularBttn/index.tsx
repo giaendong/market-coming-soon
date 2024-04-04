@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Index = () => {
+interface CircularBttn {
+    outterClass?: string;
+}
+
+const Index = (props: CircularBttn) => {
     const Letter: string[] = "JOIN NOW JOIN NOW JOIN".split("");
     return (
-        <div className="relative z-50 mt-5">
+        <div className={`relative z-50 ${props.outterClass}`}>
             <section id="circular-text">
                 {Letter.map((item: string, index: number) => {
                     return (
