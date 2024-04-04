@@ -273,16 +273,16 @@ export default function Connect(): JSX.Element {
                     </span>
                     <div className="grid grid-cols-6 grid-rows-1 gap-3 mt-2">
                         <div className="col-span-4 col-start-2 flex justify-around">
-                            <a href="https://www.youtube.com/">
+                            <a href="mailto:help@nusamarket.io.com">
                                 <Image src={"/envelope.svg"} alt={'Email'} width={20} height={20}/>
                             </a>
-                            <a href="https://www.youtube.com/">
+                            <a href="https://discord.gg/WjKtDfR329">
                                 <Image src={"/discord.svg"} alt={'discord'} width={20} height={20}/>
                             </a>
-                            <a href="https://www.youtube.com/">
+                            <a href="https://www.youtube.com/@Nusa.Market">
                                 <Image src={"/youtube.svg"} alt={'youtube'} width={20} height={20}/>
                             </a>
-                            <a href="https://www.youtube.com/">
+                            <a href="https://t.me/NusametaCircles">
                                 <Image src={"/telegram.svg"} alt={'telegram'} width={20} height={20}/>
                             </a>
                         </div>
