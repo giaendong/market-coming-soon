@@ -19,7 +19,7 @@ export default function Connect(): JSX.Element {
             <section className="w-screen h-screen relative bg-[url('/images/bgCconnect.png')] ">
                 {/*<div className="css-selector"></div>*/}
                 <div className="flex flex-col justify-center text-center items-center">
-                    <img className="relative" src={'/images/logo.png'} alt={'Logo Connect'}
+                    <img className="relative lg:mt-60 mt-32 z-10" src={'/images/logo.png'} alt={'Logo Connect'}
                          width={600} height={300}/>
                     <p className='lg:text-[24px] text-[20px]'>
                         Forge Creative Partnerships in Web 3.0 with
@@ -37,7 +37,7 @@ export default function Connect(): JSX.Element {
             </section>
             <section className="w-screen h-screen relative bg-[#000F22]">
                 <div className="container mx-auto px-4 md:px-0">
-                    <div className="flex flex-row lg:pt-10">
+                    <div className="flex flex-row lg:pt-10 sticky top-0 botoom-0 w-full bg-[#000F22]">
                         <p className="leading-[24px] text-[14px] font-normal text-white mr-3">
                             <small>
                                 01
@@ -255,7 +255,7 @@ export default function Connect(): JSX.Element {
                 </div>
                 <div
                     className={"w-[calc(100vw)] h-[calc(50vh-120px)] bg-[#000000] rounded-[50%_50%_0_0]" +
-                        " drop-shadow-[-6px_-84px_32px_rgba(1,120,255,0.5)] relative"}>
+                        " drop-shadow-[-6px_-84px_32px_rgba(1,120,255,0.5)] "}>
                     <CircularBttn outterClass={"mt-5 md:mt-10 lg:mt-24"} />
 
                 </div>
