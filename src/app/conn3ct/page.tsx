@@ -47,7 +47,7 @@ export default function Connect(): JSX.Element {
                             &nbsp;About Program
                         </p>
                     </div>
-                    <div className="flex-col lg:flex-row grid lg:grid-cols-2 lg:gap-5">
+                    <div className="flex-col lg:flex-row grid lg:grid-cols-2 lg:gap-5 ">
                          <div>
                              <Image className="mt-12 w-full h-auto" src={"/images/Section-1.png"} alt={'Welcome Creators'} width={500}
                                     height={500}/>
@@ -242,7 +242,7 @@ export default function Connect(): JSX.Element {
             </section>
             <section className="w-screen h-screen relative bg-[url('/images/bgCconnect.png')]">
                 <div className="container mx-auto px-4 md:px-0">
-                    <h1 className='lg:text-[60px] text-[2.5rem] font-bold tracking-widest z-10 text-center'>
+                    <h1 className='lg:text-[60px] text-[2.5rem] font-bold tracking-widest z-10 text-center text-white'>
                         Ready to Join Us?
                     </h1>
                     <p className='not-italic font-semibold lg:text-[24px] md:text-[20px] text-[1rem] leading-8 text-white

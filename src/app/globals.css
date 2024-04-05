@@ -16,6 +16,10 @@
   }
 } */
 
+body{
+  color: #ffffff;
+}
+
 .text {
   font-weight: 700;
   letter-spacing: 0.225rem;
