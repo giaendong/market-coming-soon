@@ -6,7 +6,7 @@ interface CircularBttn {
     outterClass?: string;
 }
 
-const Index = (props: CircularBttn) => {
+const CircularBttn = (props: CircularBttn) => {
     const Letter: string[] = "JOIN NOW JOIN NOW JOIN".split("");
     return (
         <div className={`relative z-50 ${props.outterClass}`}>
@@ -31,4 +31,4 @@ const Index = (props: CircularBttn) => {
 };
 
 
-export default Index;
+export default CircularBttn;
