@@ -16,73 +16,31 @@
   }
 } */
 
-body {
-  color: rgb(255, 255, 255);
-  background: black;
-}
-
-/*section#circular-text {*/
-/*  animation: animate 17.5s linear infinite;*/
+/*body{*/
+/*  color: #ffffff;*/
 /*}*/
 
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.letter {
-  /*position: absolute;*/
-  font-family: inherit;
-  /*top: 0;*/
-  /*left: 30px;*/
-  font-weight: normal;
-  font-size: 24px;
-  display: inline-block;
-  color: white;
-  transform-origin: 0 70px;
+.text {
+  font-weight: 700;
+  letter-spacing: 0.225rem;
   text-transform: uppercase;
-  line-height: 0;
+
+  font-size: 1rem;
+  fill: #ffffff;
+  text-shadow: 0.0125rem 1px 5px rgba(0,0,0,0.2);
 }
 
-.css-selector {
-  background: linear-gradient(180deg, rgba(63, 105, 255, 0.5), rgba(0, 27, 123, 0.5), rgba(143, 43, 43, 0));
-  width: 100vw;
-  height: 100vh;
-
-
-  -webkit-animation: CreatorConnect 10s linear forwards;
-  -moz-animation: CreatorConnect 10s linear forwards;
-  -o-animation: CreatorConnect 10s linear forwards;
-  animation: CreatorConnect 10s linear forwards;
+#rotatingText {
+  animation-name: rotate-circle;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: all 1.2s ease-in-out;
 }
 
-@-webkit-keyframes CreatorConnect {
-  100%{background-position:50% 0%; opacity: 0}
-  50%{background-position:51% 100%; opacity: 1}
-  0%{background-position:50% 0%; opacity: 0}
+@keyframes rotate-circle {
+  to {
+    transform: rotate(1turn);
+  }
 }
-@-moz-keyframes CreatorConnect {
-  100%{background-position:50% 0%; opacity: 0}
-  50%{background-position:51% 100%; opacity: 1}
-  0%{background-position:50% 0%; opacity: 0}
-}
-@-o-keyframes CreatorConnect {
-  100%{background-position:50% 0%; opacity: 0}
-  50%{background-position:51% 100%; opacity: 1}
-  0%{background-position:50% 0%; opacity: 0}
-}
-@keyframes CreatorConnect {
-  100%{background-position:50% 0%; opacity: 0}
-  50%{background-position:51% 100%; opacity: 1}
-  0%{background-position:50% 0%; opacity: 0}
-}
+
