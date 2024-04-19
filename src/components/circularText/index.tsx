@@ -12,7 +12,7 @@ const CircularText: React.FC<CircularTextProps> = ({ txt, radius, className }) =
 
     useEffect(() => {
         const txtArray = txt.split("");
-        const deg = 360 / txtArray.length;
+        const deg = 0 / txtArray.length;
         let origin = 0;
 
         const elements = txtArray.map((ea, index) => {

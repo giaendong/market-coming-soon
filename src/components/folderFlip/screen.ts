@@ -1,4 +1,4 @@
-const screenSize = {
+export const screenSize = {
   sm: {
     unit: 'px',
     text: 335,
