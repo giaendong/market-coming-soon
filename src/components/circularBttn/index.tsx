@@ -9,7 +9,7 @@ interface CircularBttn {
 const CircularBttn = (props: CircularBttn) => {
     return (
         <div className={`relative z-50 ${props.outterClass}`}>
-            <CircularText txt={"JOIN NOW JOIN NOW JOIN JOIN NOW JOIN NOW JOIN NOW JOIN"} radius={80} />
+            <CircularText txt={"JOIN NOW JOIN NOW JOIN JOIN NOW"} radius={100} />
             <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfJNnNQLY9gwym_I3YabPraW-xVSzWdvVScr-K-HsWsRX5rQA/viewform">
                 <button role="button"
