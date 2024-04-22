@@ -13,7 +13,7 @@ const CircularText: React.FC<CircularTextProps> = ({ txt, radius, className }) =
     useEffect(() => {
         const txtArray = txt.split("");
         const deg = 0 / txtArray.length;
-        let origin = 0;
+        let origin = 180;
 
         const elements = txtArray.map((ea, index) => {
             const style: React.CSSProperties = {
@@ -30,22 +30,26 @@ const CircularText: React.FC<CircularTextProps> = ({ txt, radius, className }) =
         setTextElements(elements);
     }, [txt, radius]);
 
+
     return (
         <div className="absolute -translate-x-2/4 -translate-y-[10%] left-2/4 top-2/4">
             <svg id="rotatingText" viewBox="0 0 200 200" width="200" height="200">
                 <defs>
                     <path id="circle" d="M 100, 100
-                m -75, 0
-                a 75, 75 0 1, 0 150, 0
-                a 75, 75 0 1, 0 -150, 0
-                ">
+                        m -75, 0
+                        a 75, 75 0 1, 0 150, 0
+                        a 75, 75 0 1, 0 -150, 0
+                        ">
                     </path>
+
                 </defs>
-                <text width="400">
-                    <textPath alignmentBaseline="inherit" xlinkHref="#circle" className="text">
-                        {txt}
-                    </textPath>
-                </text>
+                <g>
+                    <text width="400">
+                        <textPath startOffset="0%" alignmentBaseline="inherit" xlinkHref="#circle" className="text">
+                            {txt}
+                        </textPath>
+                    </text>
+                </g>
             </svg>
         </div>
     );

@@ -22,12 +22,13 @@
 
 .text {
   font-weight: 700;
-  letter-spacing: 0.225rem;
+  letter-spacing: 0.395rem;
   text-transform: uppercase;
 
   font-size: 1rem;
   fill: #ffffff;
   text-shadow: 0.0125rem 1px 5px rgba(0,0,0,0.2);
+  transform: rotateY(180deg);
 }
 
 #rotatingText {
@@ -41,6 +42,7 @@
 @keyframes rotate-circle {
   to {
     transform: rotate(1turn);
+
   }
 }
 
