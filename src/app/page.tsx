@@ -95,11 +95,11 @@ export default function Home() {
                   onChange={(e) => [setEmail(e.target.value), setIsSuccess(false)]}
                 />
                 <div className='self-end lg:text-[12px] text-[10px] font-extralight text-neutral-300'>
-                  { 
-                    errMessage ? 
+                  {
+                    errMessage ?
                       <span className='text-red-500'>{errMessage}</span> :
                       "*Required field"
-                  }       
+                  }
                 </div>
               </div>
               <div>
@@ -114,8 +114,8 @@ export default function Home() {
             </div>
             :
             <div className='lg:basis-3/5 flex flex-col text-white'>
-              <Image src={'/images/logo.png'} alt={''} width={667} height={375} className='lg:-ml-40 lg:-mt-32'/>
-              <div className='lg:-mt-20'>
+              <Image src={'/images/logo.png'} alt={''} width={667} height={375} className='lg:-ml-10 lg:-mt-32'/>
+              <div className='lg:-mt-10'>
                 <h1 className='lg:text-[48px] text-[24px] font-bold tracking-widest'>ELEVATE YOUR</h1>
                 <h1 className='lg:text-[48px] text-[24px] font-bold tracking-widest'>DIGITAL EXPERIENCE</h1>
                 <h1 className='lg:text-[48px] text-[24px] font-bold tracking-widest'>WHERE <span className='text-cyan-300'>{currentText}</span></h1>
